@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ThapaReact3Hr/static/css/main.58dc8fea.css",
+    "main.js": "/ThapaReact3Hr/static/js/main.f1ac8412.js",
+    "index.html": "/ThapaReact3Hr/index.html",
+    "main.58dc8fea.css.map": "/ThapaReact3Hr/static/css/main.58dc8fea.css.map",
+    "main.f1ac8412.js.map": "/ThapaReact3Hr/static/js/main.f1ac8412.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58dc8fea.css",
+    "static/js/main.f1ac8412.js"
+  ]
+}
