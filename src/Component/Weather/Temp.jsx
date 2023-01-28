@@ -4,6 +4,7 @@ import './style.css'
 import WeatherCard from './WeatherCard';
 
 function Temp() {
+  const [value,setValue]=useState("");
   const [searchValue, setSearchValue] = useState('gaya');
   const [tempInfo,setTempInfo]=useState({});
   const [error,setError]=useState("");
@@ -12,7 +13,7 @@ function Temp() {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=e2e61db07c1a827baf9d5639ac90ab99`
       const res = await fetch(url)
       const data = await res.json()
-      // console.log(data)
+      console.log(data)
 
       const { temp, humidity, pressure } = data.main
       const { main: weathermood } = data.weather[0]
@@ -39,8 +40,13 @@ function Temp() {
   useEffect(() => {
     getWeatherInfo()
   }, [])
+
+  const handleCLickNow=(e)=>{
+      searchValue=e.target.value;
+  }
   return (
     <div>
+     
       <div className='wrap'>
         <div className='search'>
           <input

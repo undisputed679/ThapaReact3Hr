@@ -5,11 +5,13 @@ import UseState from './Component/Hooks/UseState';
 import UseReducer from './Component/Hooks/UseReducer';
 import Todo from './Component/Todo/Todo';
 import Temp from './Component/Weather/Temp';
+import Try from './Component/Try';
 
 function App() {
   return (
     <div className="App">
-      <Temp/>
+      {/* <Temp/> */}
+      <Try/>
     </div>
   );
 }
